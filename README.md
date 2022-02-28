@@ -25,3 +25,36 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Deploy Heroku API
+- Fazer cadastro na Heroku
+- create a new app
+  - nome
+  - região
+  - create app
+- Deployment method
+  - github
+  - connect github
+  - escolhe o repositório
+  - habilitar deploy automático
+  - escolhe a branch
+- Na API na raiz
+  - Espeficicar a versõa do JDK
+  - crie um arquivo *system.properties*
+```
+java.runtime.version=11
+```
+- Mudar @CrossOrigin para a URL do frontend
+## Deploy GITHUB Pages
+- nome-od-usuario.github.io
+- muda a url de produção da API
+- ng build --prod
+- o build será gerado na pasta dist
+- copie a pasta que está dentro de dist
+- renomeie para docs e coloqe na raiz
+- após subir a aplicação
+  - vá em settings
+  - github pages
+    - em source, selecione docs
+  
